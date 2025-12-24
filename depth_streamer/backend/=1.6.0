@@ -1,0 +1,37 @@
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting aiortc
+  Using cached https://www.piwheels.org/simple/aiortc/aiortc-1.14.0-py3-none-any.whl (93 kB)
+Collecting aioice<1.0.0,>=0.10.1 (from aiortc)
+  Using cached https://www.piwheels.org/simple/aioice/aioice-0.10.2-py3-none-any.whl (24 kB)
+Requirement already satisfied: av<17.0.0,>=14.0.0 in /usr/lib/python3/dist-packages (from aiortc) (14.2.0)
+Collecting cryptography>=44.0.0 (from aiortc)
+  Using cached cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+Collecting google-crc32c>=1.1 (from aiortc)
+  Using cached google_crc32c-1.8.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (1.7 kB)
+Collecting pyee>=13.0.0 (from aiortc)
+  Using cached https://www.piwheels.org/simple/pyee/pyee-13.0.0-py3-none-any.whl (15 kB)
+Collecting pylibsrtp>=0.10.0 (from aiortc)
+  Using cached pylibsrtp-1.0.0-cp310-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (4.0 kB)
+Requirement already satisfied: pyopenssl>=25.0.0 in /usr/lib/python3/dist-packages (from aiortc) (25.0.0)
+Collecting dnspython>=2.0.0 (from aioice<1.0.0,>=0.10.1->aiortc)
+  Using cached https://www.piwheels.org/simple/dnspython/dnspython-2.8.0-py3-none-any.whl (331 kB)
+Collecting ifaddr>=0.2.0 (from aioice<1.0.0,>=0.10.1->aiortc)
+  Using cached https://www.piwheels.org/simple/ifaddr/ifaddr-0.2.0-py3-none-any.whl (12 kB)
+Collecting cffi>=2.0.0 (from cryptography>=44.0.0->aiortc)
+  Using cached cffi-2.0.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=44.0.0->aiortc)
+  Using cached https://www.piwheels.org/simple/pycparser/pycparser-2.23-py3-none-any.whl (118 kB)
+Requirement already satisfied: typing-extensions in /usr/lib/python3/dist-packages (from pyee>=13.0.0->aiortc) (4.13.2)
+Collecting cryptography>=44.0.0 (from aiortc)
+  Downloading cryptography-44.0.3-cp39-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+Using cached cffi-2.0.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (220 kB)
+Using cached google_crc32c-1.8.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (33 kB)
+Using cached pylibsrtp-1.0.0-cp310-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (2.7 MB)
+Downloading cryptography-44.0.3-cp39-abi3-manylinux_2_34_aarch64.whl (4.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 4.5 MB/s eta 0:00:00
+
+Installing collected packages: ifaddr, pyee, pycparser, google-crc32c, dnspython, cffi, aioice, pylibsrtp, cryptography, aiortc
+
+
+Successfully installed aioice-0.10.2 aiortc-1.14.0 cffi-2.0.0 cryptography-44.0.3 dnspython-2.8.0 google-crc32c-1.8.0 ifaddr-0.2.0 pycparser-2.23 pyee-13.0.0 pylibsrtp-1.0.0

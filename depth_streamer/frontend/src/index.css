@@ -1,0 +1,145 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.video-section {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.controls-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 280px;
+}
+
+.status-bar {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+/* Video element */
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+/* Controls */
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.control-group select,
+.control-group input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+.control-group input[type="range"] {
+  -webkit-appearance: none;
+  height: 6px;
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+.control-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.control-group button:hover {
+  background-color: #0056b3;
+}
+
+.control-group button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-connected {
+  background-color: #28a745;
+}
+
+.status-disconnected {
+  background-color: #dc3545;
+}
+
+.status-connecting {
+  background-color: #ffc107;
+}
+
+/* Error messages */
+.error-message {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+

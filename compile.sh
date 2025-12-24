@@ -21,6 +21,7 @@ fi
 if cmake --build "$build_dir" --config Release --target example -j 4 &&
     cmake --build "$build_dir" --config Release --target capture_raw -j 4 &&
     cmake --build "$build_dir" --config Release --target preview_depth -j 4 &&
+    cmake --build "$build_dir" --config Release --target preview_depth_stream -j 4 &&
     cmake --build "$build_dir" --config Release --target preview_depth_c -j 4; then
     echo "== Build success"
     echo "== Run $build_dir/example/cpp/example"
@@ -29,6 +30,7 @@ else
     if cmake --build "$build_dir" --config Release --target example &&
         cmake --build "$build_dir" --config Release --target capture_raw &&
         cmake --build "$build_dir" --config Release --target preview_depth &&
+        cmake --build "$build_dir" --config Release --target preview_depth_stream &&
         cmake --build "$build_dir" --config Release --target preview_depth_c; then
         echo "== Build success"
         echo "== Run $build_dir/example/cpp/example"
